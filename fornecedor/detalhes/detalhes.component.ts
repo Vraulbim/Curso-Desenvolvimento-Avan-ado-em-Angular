@@ -19,8 +19,6 @@ export class DetalhesComponent {
 
       this.fornecedor = this.route.snapshot.data['fornecedor'];
       this.enderecoMap = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.google.com/maps/embed/v1/place?q=" + this.EnderecoCompleto() + "&key=AIzaSyAP0WKpL7uTRHGKWyakgQXbW6FUhrrA5pE");
-      //AIzaSyDD43LIULN4uD1FC961mu8EpFH9SvmPNVc - Minha chave
-      //AIzaSyAP0WKpL7uTRHGKWyakgQXbW6FUhrrA5pE - Desenvolvedor.io
   }
 
   public EnderecoCompleto(): string {
